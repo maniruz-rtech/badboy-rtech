@@ -1,0 +1,6 @@
+<launch>
+<node pkg="tf" type="static_transform_publisher" name="link1_broadcaster" args="1 0 0 0 0 0 1 map sensor_msgs 100" />
+<node name="range_publisher" pkg="range_visualizer" type="range_publisher"/>
+<node name="rviz" pkg="rviz" type="rviz"/>
+</launch>
+
